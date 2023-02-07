@@ -1,0 +1,81 @@
+--1
+Select FirstName from students
+Where FirstName Like 'k%'
+
+--2
+Select FirstName from students
+Where FirstName Like '_____'
+
+--3
+Select FirstName, LastName From students
+Where City like '_____a'
+
+--4
+Select * From students
+Where LastName like '%tel'
+
+--5
+Select * From students
+Where FirstName Like 'ha%t'
+
+--6
+Select * From students
+Where FirstName Like 'k_y%'
+
+--7
+Select FirstName From Students
+Where Website is null And FirstName Like '_____'
+
+--8
+Select * From students
+Where LastName like '%jer%'
+
+--9
+Select * From students
+Where City like '[r,b]%'
+
+--10
+Select FirstName From Students
+Where Website is not null
+
+--11
+Select * From students
+Where FirstName Like '[a-h]%'
+
+--12
+Select * From students
+Where FirstName Like '_[a,e,i,o,u]%'
+
+--13
+Select FirstName From students
+Where City Like '%rod%'
+
+--14
+Select FirstName, LastName From students
+Where Website like 'bi%'
+
+--15
+Select City From students
+Where LastName like '______'
+
+--16
+Select * From students
+Where city like '_____'
+And City not like 'ba%'
+
+--17
+Select * From students
+Where Division like 'II%'
+
+--18
+Select FirstName From students
+Where Division like '%bc%'
+
+--19
+Select StuId, City From students
+Where Division like '______'
+And Website is not Null
+
+--20
+Select * From students
+Where FirstName not like '__[a,e,i,o,u]%'
