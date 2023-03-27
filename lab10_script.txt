@@ -1,0 +1,75 @@
+-----------------------------Student-----------------------------
+Create table Student
+(
+    Rno int,
+    Name varchar (50),
+    Branch varchar (50)
+);
+
+Insert into Student values(101, 'Raju' , 'CE');
+Insert into Student values(102, 'Amit' , 'CE');
+Insert into Student values(103, 'Sanjay' , 'ME');
+Insert into Student values(104, 'Neha' , 'EC');
+Insert into Student values(105, 'Meera' , 'EE');
+Insert into Student values(106, 'Mahesh' , 'ME');
+
+-----------------------------Result-----------------------------
+Create table Result
+(
+    RNo int,
+    SPI Decimal (4,2)
+);
+
+Insert into Result values(101, 8.8);
+Insert into Result values(102, 9.2);
+Insert into Result values(103, 7.6);
+Insert into Result values(104, 8.2);
+Insert into Result values(105, 7.0);
+Insert into Result values(107, 8.9);
+
+-----------------------------Employee-----------------------------
+Create table Employee
+(
+    EmployeeNo varchar (50),
+    Name varchar (50),
+    ManagerNo varchar (50)
+);
+
+Insert into Employee values('E01', 'Tarun' , NULL);
+Insert into Employee values('E02', 'Rohan' , 'E02');
+Insert into Employee values('E03', 'Priya' , 'E01');
+Insert into Employee values('E04', 'Milan' , 'E03');
+Insert into Employee values('E05', 'Jay'   , 'E01');
+Insert into Employee values('E06', 'Anjana' , 'E04');
+
+-----------------------------City-----------------------------
+Create table City 
+(
+    CityID int NOT NULL Primary key, 
+    CityName varchar (50) NOT NULL UNIQUE, 
+    Pincode varchar (6), 
+    Remarks varchar (250)
+);
+
+Insert into City values(1, 'Rajkot', '360005', 'Good');
+Insert into City values(2, 'Surat', '335009', 'Very Good');
+Insert into City values(3, 'Baroda', '390001', 'Awesome');
+Insert into City values(4, 'Jamnagar', '361003', 'Smart');
+Insert into City values(5, 'Junagadh', '362229', 'Historic');
+Insert into City values(6, 'Morbi', '363641', 'Ceramic');
+
+-----------------------------Village-----------------------------
+Create table Village 
+(
+    VillageID int, 
+    VillageName varchar (50), 
+    CityID int,
+    FOREIGN KEY (CityID) REFERENCES City(CityID)
+);
+
+Insert into Village values(101, 'Raiya', 1);
+Insert into Village values(102, 'Madhapar', 1);
+Insert into Village values(103, 'Dodka', 3);
+Insert into Village values(104, 'Falla', 4);
+Insert into Village values(105, 'Bhesan', 5);
+Insert into Village values(106, 'Dhoraji', 5);
