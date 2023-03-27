@@ -1,0 +1,39 @@
+-------------------computer-------------------
+
+Create Table Computer
+(
+    RollNo Int,
+    Name varchar (50)
+);
+
+insert into Computer values (101, 'Ajay');
+insert into Computer values (109, 'Haresh');
+insert into Computer values (115, 'Manish');
+
+
+-------------------eletrical-------------------
+
+Create Table Eletrical
+(
+    RollNo Int,
+    Name varchar (50)
+);
+
+insert into Eletrical values (105, 'Ajay');
+insert into Eletrical values (107, 'Mahesh');
+insert into Eletrical values (115, 'Manish');
+
+
+-------------------Cricket-------------------
+
+Create Table Cricket
+(
+    Name varchar (50),
+    City varchar (50),
+    Age Int
+);
+
+insert into Cricket values ('Sachin Tendulkar', 'Mumbai' , 30);
+insert into Cricket values ('Rahul Dravid' , 'Bombay' , 35);
+insert into Cricket values ('M. S. Dhoni' , 'Jharkhand' , 31);
+insert into Cricket values ('Suresh Raina' , 'Gujarat' , 30);
