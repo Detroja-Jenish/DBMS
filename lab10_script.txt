@@ -73,3 +73,22 @@ Insert into Village values(103, 'Dodka', 3);
 Insert into Village values(104, 'Falla', 4);
 Insert into Village values(105, 'Bhesan', 5);
 Insert into Village values(106, 'Dhoraji', 5);
+
+
+
+
+
+
+
+
+create table AddmisionDetails
+( 
+AddmisionId int not null primary key AUTO_INCREMENT, 
+QutaId int, 
+YearId int NOT NULL, 
+SID int NOT NULL, 
+courseId int, 
+FOREIGN KEY(QutaId) REFERENCES AddmissionQuataFields(QutaId), 
+FOREIGN KEY(YearId) REFERENCES AddimisionYearDetails(YearId), 
+FOREIGN KEY(SID) REFERENCES StudentDetails(SID), 
+FOREIGN KEY(courseId) REFERENCES courses(courseId) )
